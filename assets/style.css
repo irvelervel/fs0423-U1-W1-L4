@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Lato', 'Arial', sans-serif;
+  /* dopo le virgole indichiamo i font di recupero, in gergo "fallback" */
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.6em;
+}

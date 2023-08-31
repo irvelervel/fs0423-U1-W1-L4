@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esempio di background-image</title>
+    <!-- importo il foglio di reset -->
+    <link rel="stylesheet" href="assets/reset.css" />
+    <style>
+      .my-image {
+        width: 300px;
+        height: 300px;
+        border: 1px solid gray;
+        margin: 50px 100px;
+        /* 50 alto/basso, 100 dx/sx */
+        background-image: url(https://placekitten.com/500);
+        /* background-size: contain; */ /* rimpicciolirebbe l'immagine per riempire il div (che è più piccolo) */
+        background-position: 50% 20%; /* scelgo sull'asse x e sull'asse y cosa inquadrare dell'immagine */
+      }
+
+      .my-image2 {
+        width: 600px;
+        height: 600px;
+        border: 1px solid gray;
+        margin: 50px 100px;
+        /* 50 alto/basso, 100 dx/sx */
+        background-image: url(https://placekitten.com/300);
+      }
+
+      .my-image + div {
+        text-align: center;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:hover {
+        font-size: 2em;
+      }
+
+      .my-image:hover {
+        transform: rotate(90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="my-image"></div>
+      <div>
+        <a href="https://www.epicode.com">VAI SU EPICODE.COM</a>
+      </div>
+      <div class="my-image2">VINCENZO</div>
+      <hr />
+    </main>
+  </body>
+</html>
