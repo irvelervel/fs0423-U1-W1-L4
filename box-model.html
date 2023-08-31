@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model examples</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        padding: 25px;
+        /* proprietà flex che vedremo meglio in futuro */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .blue {
+        background-color: aqua;
+        border: 2px solid blue;
+        box-sizing: content-box; /* DEFAULT */
+      }
+
+      .red {
+        background-color: pink;
+        border: 2px solid red;
+        box-sizing: border-box;
+      }
+
+      .separator {
+        margin: 50px 0;
+      }
+
+      #cat {
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Esempi di box modeling</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="box blue">BLUE BOX!</div>
+        <div class="box red">RED BOX!</div>
+        <div class="separator"></div>
+        <img src="https://placekitten.com/700" alt="gattino random" id="cat" />
+      </div>
+    </main>
+  </body>
+</html>
